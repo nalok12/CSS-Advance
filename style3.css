@@ -1,0 +1,36 @@
+/* Task 3 */
+
+/* circular loader which will rotate continuously to look like loading screen */
+
+.screen{
+   min-width: 100vw;
+    min-height: 100vh;
+    border: 2px solid black;
+    background-color: gray;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.loader{
+    animation: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    border: 4px solid rgb(122, 7, 7, .4);
+    border-left-color: aqua;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
